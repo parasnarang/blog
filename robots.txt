@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://parasnarang.github.io/blog/sitemap.xml 
