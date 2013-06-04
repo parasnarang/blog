@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hacker | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/hacker/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Rumble 2012]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/10/17/rails-rumble-2012/"/>
+    <updated>2012-10-17T02:31:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/10/17/rails-rumble-2012</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">This year, <a href="http://www.rohitmishra.me/" target="_blank">Rohit Mishra</a> and I participated in <a href="http://railsrumble.com/" target="_blank">Rails Rumble</a> and built <a href="http://appdreamers.r12.railsrumble.com/%C2%A0" target="_blank">SocialKart</a> from scratch in less than 48 hours.<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-1YtksbR6StE/ULkd2oj9jWI/AAAAAAAABIs/IjYxJdyj4rs/s1600/Screen+Shot+2012-12-01+at+2.26.02+AM.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="http://2.bp.blogspot.com/-1YtksbR6StE/ULkd2oj9jWI/AAAAAAAABIs/IjYxJdyj4rs/s640/Screen+Shot+2012-12-01+at+2.26.02+AM.png" width="640" /></a></div>Some Details are :<br /><br />Team name : AppDreamers<br /><br />Description: Socialkart lets users do quick comparisons of products from Flipkart, the leading Indian ecommerce site, with their Facebook friends.<br /><br />Entry Link :&nbsp;<a href="http://railsrumble.com/entries/386-socialkart">http://railsrumble.com/entries/386-socialkart</a> (Vote for us here)<br /><br />Live Demo : <a href="http://appdreamers.r12.railsrumble.com/" target="_blank">http://appdreamers.r12.railsrumble.com/</a></div></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yahoo! Open Hack Day 2012]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/08/19/yahoo-open-hack-day-2012/"/>
+    <updated>2012-08-19T11:51:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/08/19/yahoo-open-hack-day-2012</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-size: large;">Some Notes on #openhackindia2012&nbsp;</span><br /><ul style="text-align: left;"><li>Venue - The Sheraton Hotel, Bangalore was amazing. Superb Ambience.</li><li>Food was unlimited and&nbsp;ridiculously&nbsp;delicious.</li><li>There were a few talks by yahoo employees on their products like yql, yui, mojito js etc.</li><li>Kinects, Xboxes, Mini Golf, Table tennis, Foosball etc were there.&nbsp;</li><li>Amazing Laserman.</li><li>Got some goodies, beanbag and participation certificate.</li><li><a href="http://hacks.developer.yahoo.com/hack/yahoo-open-hack-india-2012/socialkart/event_2/hack_193" target="_blank">My Hack</a> (with <a href="http://www.rohitmishra.me/" target="_blank">Rohit Mishra</a>) - The code was broken when time got over so couldn't demo it. I hope to complete it soon.</li><li><a href="http://developer.yahoo.com/blogs/ydn/posts/2012/08/open-hack-india-delivers-once-again/" target="_blank">Winning Hacks</a>.</li><li><a href="https://www.facebook.com/media/set/?set=a.491829957511782.130250.100000543459120&amp;type=1" target="_blank">Some Pics</a>.</li><li><a href="http://www.flickr.com/photos/tags/openhackindia2012/" target="_blank">Some More Pics</a>.</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="https://www.facebook.com/491832434178201" target="_blank"><img border="0" height="480" src="http://1.bp.blogspot.com/-SYEDs-zJQE4/UDB_tG60qPI/AAAAAAAABGs/xflTWcolsIg/s640/488226_491832434178201_2028359906_n.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-tr0kj-wSLw8/UDCDmehJrrI/AAAAAAAABHQ/MktP6hmp1Dw/s1600/2012-08-11+09.18.30.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/-tr0kj-wSLw8/UDCDmehJrrI/AAAAAAAABHQ/MktP6hmp1Dw/s640/2012-08-11+09.18.30.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-yWV8d6j73VE/UDB_vpvwBVI/AAAAAAAABG8/oMAgGbht0no/s1600/539058_491833667511411_1321604299_n.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://3.bp.blogspot.com/-yWV8d6j73VE/UDB_vpvwBVI/AAAAAAAABG8/oMAgGbht0no/s640/539058_491833667511411_1321604299_n.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-r55tTb4xNz0/UDB_qlEVFnI/AAAAAAAABGc/mGxihf6IytI/s1600/311748_491834557511322_59692796_n.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://3.bp.blogspot.com/-r55tTb4xNz0/UDB_qlEVFnI/AAAAAAAABGc/mGxihf6IytI/s640/311748_491834557511322_59692796_n.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-dftqsiOSi_o/UDB_ubryLoI/AAAAAAAABG0/JoVeWHLrzvM/s1600/488300_491834774177967_1749332871_n.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/-dftqsiOSi_o/UDB_ubryLoI/AAAAAAAABG0/JoVeWHLrzvM/s640/488300_491834774177967_1749332871_n.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-WcCh88lG294/UDB_rm3qmTI/AAAAAAAABGk/7V_WkInPaF4/s1600/417399_491834674177977_1019744630_n.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/-WcCh88lG294/UDB_rm3qmTI/AAAAAAAABGk/7V_WkInPaF4/s640/417399_491834674177977_1019744630_n.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-90iQwcUJvr4/UDCDvL1WxkI/AAAAAAAABHY/unbzf_wW9OY/s1600/2012-08-12+13.32.51.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://1.bp.blogspot.com/-90iQwcUJvr4/UDCDvL1WxkI/AAAAAAAABHY/unbzf_wW9OY/s640/2012-08-12+13.32.51.jpg" width="640" /></a></div></div></div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>robin hood</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+<div class='comment'>
+<div class='author'>Ajar Hets</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Winning the Hackathon at Exebit 2012, IIT Chennai]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/03/10/winning-hackathon-at-exebit-2012-iit/"/>
+    <updated>2012-03-10T08:32:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/03/10/winning-hackathon-at-exebit-2012-iit</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on">This year on 3rd and 4th March, The department of Computer Science Engineering of IIT Chennai organized a technical festival named <a href="http://www.cse.iitm.ac.in/exebit/site/" target="_blank">Exebit 2012</a>.<br />Students from IIT Chennai had come to my college and were making classroom announcements to promote their fest. They were planning to conduct many interesting workshops and events.<br /><br />I was interested in one particular event, the <a href="http://www.cse.iitm.ac.in/exebit/site/?q=node/25" target="_blank">Hackathon</a>. So I decided to participate along with 3 friends in a team of 4.<br /><br />The hackathon was a 2-day coding event. It started on Saturday morning. First, we were given an introduction to three open source projects - <a href="http://www.kde.org/" target="_blank">KDE</a>, <a href="http://www.mediawiki.org/" target="_blank">MediaWiki</a>&nbsp;and <a href="https://www.djangoproject.com/" target="_blank">Django</a>. After that we were given a list of bugs in each of these projects. The team that solves the maximum/toughest bugs wins.<br /><br />We were relatively new to all of the three projects. Solving KDE bugs would require knowledge of C++, MediaWiki of object oriented Php and Django of Python.<br />We were having some trouble in setting up the KDE environment and as 2 of us knew Php well, we decided to try our hand at solving MediaWiki bugs. It took us quite some time to understand how the MediaWiki framework works and what are Extensions, Hooks, Special Pages etc. Then we started coding.<br />We spent the whole night coding in lab. I didnot sleep for those 2 days! Early morning, we went for a <a href="https://twitter.com/#!/parasnarang/status/176114710633119744" target="_blank">walk in the campus</a>. We played basketball early in the morning. Then back to coding after breakfast. The other teams were working hard too. By evening, we were able to find solutions to 6 bugs. In the end we had to give presentations on our bug patches and after some time the winners were announced.<br /><br />We won the <a href="http://groups.google.com/group/exebit-hackathon/browse_thread/thread/1870a0ba7ce6846" target="_blank">first prize</a>! We were really happy. Not only because of the cash prize but also because it was our first experience at solving bugs in open source projects and we managed to win!<br /><br />Some facebook updates from my team: [<a href="https://www.facebook.com/parasnarang/posts/10150550117627563" target="_blank">one</a>] [<a href="https://www.facebook.com/freako2011/posts/3007331375826" target="_blank">two</a>] [<a href="https://www.facebook.com/madhumita.sk/posts/2464928242857" target="_blank">three</a>] [<a href="https://www.facebook.com/permalink.php?story_fbid=314991361891147&amp;id=100001408564659" target="_blank">four</a>]</div></div><blockquote class="twitter-tweet tw-align-center"><p>Winners of Hackathon at Exebit2012, IIT Chennai! My team: @<a href="https://twitter.com/bRainzest">bRainzest</a>, @<a href="https://twitter.com/madzie154">madzie154</a>, @<a href="https://twitter.com/cool_garima">cool_garima</a> \m/</p>&mdash; Paras Narang (@parasnarang) <a href="https://twitter.com/parasnarang/status/176586707586662400" data-datetime="2012-03-05T08:35:26+00:00">March 5, 2012</a></blockquote><script src="http://parasnarang.github.io/blog//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook Hacker Cup]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2011/01/16/fb-hacker-cup/"/>
+    <updated>2011-01-16T10:23:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2011/01/16/fb-hacker-cup</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><span style="font-size: large;">2013</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-5lHD9-U6yBw/USrTDm4oMSI/AAAAAAAABJ4/9RhjyDLY2rM/s1600/Screen+Shot+2013-02-25+at+8.25.00+AM.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-5lHD9-U6yBw/USrTDm4oMSI/AAAAAAAABJ4/9RhjyDLY2rM/s1600/Screen+Shot+2013-02-25+at+8.25.00+AM.png" /></a></div><div class="separator" style="clear: both; text-align: center;"><span style="font-size: large;">2011</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_99k5zlQdUsM/TTJ5Xay3N8I/AAAAAAAAAGY/172piNr5pz0/s1600/Screenshot.png" imageanchor="1"><img border="0" src="http://1.bp.blogspot.com/_99k5zlQdUsM/TTJ5Xay3N8I/AAAAAAAAAGY/172piNr5pz0/s1600/Screenshot.png" />&nbsp;</a></div><div class="separator" style="clear: both; text-align: center;"><br /></div></div></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to become a respectable hacker?]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2011/01/12/how-to-become-respected-hacker/"/>
+    <updated>2011-01-12T06:39:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2011/01/12/how-to-become-respected-hacker</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Hacker, not Cracker. Mind it.<br />Hackers build stuff, crackers break them.<br /><br />Hacking interests everyone. I came across an awesome article on how to become a hacker. It includes what all minimum skills are required, from where to start practicing them, what order of language time-line one should follow and also the ethics &amp; values that a hacker should have. It contains almost everything you need to know to get started.<br /><br />It is written and maintained by the famous hacker and open source spokesperson. Eric S. Raymond. Read it <a href="http://catb.org/%7Eesr/faqs/hacker-howto.html">here</a>.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_99k5zlQdUsM/TSz7mQ3OrmI/AAAAAAAAAGU/0We8IKyqmXY/s1600/esr001.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/_99k5zlQdUsM/TSz7mQ3OrmI/AAAAAAAAAGU/0We8IKyqmXY/s640/esr001.jpg" width="640" /></a></div><div align="center">Eric Steven Raymond</div><br />He has also written:<br /><ul><li>the legendary Jargon File ie The new Hackers Dictionary</li><li>a famous paper, now book - The Cathedral and the Bazaar</li><li>another book - The Art of UNIX Programming.</li></ul>Next, I plan to read the <a href="http://oreilly.com/catalog/9780596001087/">book</a> The Cathedral and the Bazaar - Musings on Linux and Open Source by an Accidental Revolutionary.<br /><br />Links:<br /><a href="http://www.catb.org/%7Eesr/jargon/">The Jargon File</a><br /><a href="http://catb.org/%7Eesr/writings/cathedral-bazaar/">The Cathedral and the Bazaar</a><br /><a href="http://www.catb.org/%7Eesr/writings/taoup/">The Art of UNIX Programming</a></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cricket Fever.. Not so much this time!]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2011/02/22/cricket-fever-not-so-much-this-time/"/>
+    <updated>2011-02-22T14:05:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2011/02/22/cricket-fever-not-so-much-this-time</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: &quot;Verdana&quot;,sans-serif;">I am a big Cricket fan, atleast I used to be one. It is said that in India, Cricket is a Religion. So, this time of the year i.e The ICC Cricket World Cup is more like a big festival out here! India being one of the hosts just adds to this.</span><br /><span style="font-size: xx-small;"></span><br /><div align="center"><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-XKC4wz-Za3s/TWNz29zYXcI/AAAAAAAAAIA/E7cItuxMnBg/s1600/m109292298.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="478" src="http://2.bp.blogspot.com/-XKC4wz-Za3s/TWNz29zYXcI/AAAAAAAAAIA/E7cItuxMnBg/s640/m109292298.jpg" width="640" /></a></div><span style="font-size: xx-small;"><span style="font-family: &quot;Verdana&quot;,sans-serif;">[Image </span><a href="http://cricket.yahoo.com/photos/"><span style="font-family: &quot;Verdana&quot;,sans-serif;">Source</span></a><span style="font-family: &quot;Verdana&quot;,sans-serif;">]</span></span></div><span style="font-family: &quot;Verdana&quot;,sans-serif;">Unfortunately, I am missing out the on the fun for now. Exams are on full swing in my university. 7 days in a row. No break. Sad right? Anyway not the point. In my hostel, the T.V room is locked during exam time. ESPN Cricinfo is the best option to stay in touch with the live scores. And of course all of India's matches are streamed live on the EspnStar website. Live streaming is a not-so-bad experience thanks to the decent wifi speed. I am eager to try out streaming with the recently launched Airtel 3G.</span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Come Sunday, It will be done :)</span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">[Sunday = India v/s England]</span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Link : </span><a href="http://www.espnstar.com/cwclive/"><span style="font-family: &quot;Verdana&quot;,sans-serif;">www.espnstar.com/cwclive</span></a><span style="font-family: &quot;Verdana&quot;,sans-serif;"><br /></span><span style="font-family: &quot;Verdana&quot;,sans-serif;"> </span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Also, there are many websites hosting competitions like the Fantasy Premier League for Cricket too. I came across one such site with a similar game for this World Cup. I really like its neat and simple interface. It is developed using Ruby on Rails and deployed on Heroku. It requires a facebook account to log in and play.</span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Link : </span><a href="http://www.rummy.openbala.com/"><span style="font-family: &quot;Verdana&quot;,sans-serif;">www.rummy.openbala.com</span></a><span style="font-family: &quot;Verdana&quot;,sans-serif;"><br /></span><span style="font-family: &quot;Verdana&quot;,sans-serif;"> </span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">I also came across a 'cricket score readout script' in a lug mailing list. The script speaks out loud the latest live score. It reads the scores from cricinfo in the background. You need eSpeak installed for it to work.</span><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Link : </span><a href="http://www.sourceforge.net/projects/sayscore/files/sayscore_wc11.sh/download"><span style="font-family: &quot;Verdana&quot;,sans-serif;">www.sourceforge.net/projects/sayscore/files/sayscore_wc11.sh/download</span></a><br /><br /><span style="font-family: &quot;Verdana&quot;,sans-serif;">Well, I think I should get back to concentrating on my exams. Desperately waiting for these 7 days to get over ASAP and join in the cricket craze! Who wants to miss out on a blazing Sehwag?</span></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My Octopress Blog</title>
+  <meta name="author" content="Paras Narang">
+
+  
+  <meta name="description" content="After launching the EC2 instance, which used Ubuntu 11.10 32bit EBS AMI, I wasn&#8217;t able to connect to the internet.ubuntu@ip-xx-xx-xx-xx:~$ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://parasnarang.github.io/blog/blog/page/3">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:parasnarang.github.io/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2012/02/03/internet-not-working-on-amazon-ec2/">Internet Not Working on Amazon EC2 Ubuntu Instance</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-03T13:56:00+05:30" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">After <a href="http://colorlessgem.blogspot.com/2012/01/ubuntu-micro-instance-on-amazon-ec2.html" target="_blank">launching</a> the EC2 instance, which used Ubuntu 11.10 32bit EBS AMI, I wasn&#8217;t able to connect to the internet.<br /><blockquote class="tr_bq"><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">ubuntu@ip-xx-xx-xx-xx:~$ ping google.com</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">PING google.com (74.125.113.103) 56(84) bytes of data.</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">^C</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">google.com ping statistics &#8212;</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">311 packets transmitted, 0 received, 100% packet loss, time 310000ms</span></blockquote>The DNS was fine.<br />I checked the security group for that instance. HTTP inbound connections were allowed. So no problem there.<br />The /etc/resolv.conf file was also in order.<br /><blockquote class="tr_bq"><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">ubuntu@ip-xx-xx-xx-xx:~$ cat /etc/resolv.conf</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">domain ec2.internal</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">search ec2.internal</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">nameserver 172.16.0.23</span></blockquote>Finally, I asked the AWS guys in the forum for help. [<a href="https://forums.aws.amazon.com/thread.jspa?messageID=316370" target="_blank">Thread</a>]<br />A simple suggestion solved my problem, though I have no clue why!<br /><br />All I had to do was stop the instance and then start it again. Just be careful that you have data backup before stopping the instance. As all your data on that instance will be lost unless you take a snapshot of the volume or have some other form of backup.<br /><br />In short, Stop/Start did the trick.<br /><blockquote class="tr_bq"></blockquote></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2012/01/24/ubuntu-micro-instance-on-amazon-ec2/">Ubuntu Micro Instance on Amazon EC2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-24T12:59:00+05:30" pubdate data-updated="true">Jan 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: 'Trebuchet MS', sans-serif;">I am going to use <a href="http://aws.amazon.com/" target="_blank">AWS</a> (Amazon Web Services) for hosting my website and blog.</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;">This blog post will cover some steps that I followed and notes that I made while setting up AWS.</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;"><a href="http://aws.amazon.com/" target="_blank">Amazon EC2</a> is Amazon Elastic Compute Cloud.</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span style="color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large;"><b>Step 1.</b>&nbsp;</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;">Go to&nbsp;<a href="http://aws.amazon.com/">aws.amazon.com</a> and signup for an AWS account.&nbsp;</span><span style="font-family: 'Trebuchet MS', sans-serif;">You will have to enter your credit card details.</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;">Also, you are required to verify your account by answering to a phone call. But in my case, Amazon&#8217;s phone verification system was giving an error.</span><br /><blockquote class="tr_bq"><span style="font-family: 'Trebuchet MS', sans-serif;"><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; text-align: -webkit-auto;">System Error</span></span>&nbsp;</blockquote><blockquote class="tr_bq"><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">We are unable to process your phone verification request at this time please try again later.</span></blockquote><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">So, I opened an inquiry ticket. This is the reply I got from them</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Cm1qifu-spQ/TyTs8suFvOI/AAAAAAAAA2A/0hRAVFl34N4/s1600/Your+Amazon+Web+Services+Inquiry+++narangparas+gmail.com+++Gmail.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-Cm1qifu-spQ/TyTs8suFvOI/AAAAAAAAA2A/0hRAVFl34N4/s1600/Your+Amazon+Web+Services+Inquiry+++narangparas+gmail.com+++Gmail.png" /></a></div><div style="text-align: -webkit-auto;"><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;"><br /></span></div><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">Using the call me now feature, I got a call from Amazon customer care. After some talking, the operator verified my account manually.&nbsp;</span><br /><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;"><br /></span><br /><span style="background-color: rgba(255, 255, 255, 0.917969); color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large; text-align: -webkit-auto;"><b>Step 2.&nbsp;</b></span><br /><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">Log in to <a href="http://aws.amazon.com/console" target="_blank">AWS console</a>.&nbsp;</span><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">Go to EC2 page.</span><br /><span style="background-color: rgba(255, 255, 255, 0.917969); color: #222222; font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">click <b>Launch an instance</b></span><br /><div style="text-align: -webkit-auto;"><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;">select <b>Launch classical wizard</b></span><br /><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;"><b><br /></b></span></div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-cCMCkRjFbTc/TyTslRfZCHI/AAAAAAAAA0I/FS29GWX9zIE/s1600/2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-cCMCkRjFbTc/TyTslRfZCHI/AAAAAAAAA0I/FS29GWX9zIE/s1600/2.png" /></a></div><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;"><br /></span></div><div style="text-align: -webkit-auto;"><span style="color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large;"><b>Step 3.</b></span></div><div style="text-align: -webkit-auto;"><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;">Now we have to choose an <a href="http://aws.amazon.com/amis" target="_blank">AMI</a>. AMI is Amazon Machine Image.</span></div><div style="text-align: -webkit-auto;"><span style="color: #222222; font-family: 'Trebuchet MS', sans-serif;">I will go for a *nix based AMI rather than a Windows based one for obvious reasons (performance, support, cost).</span></div><div style="text-align: -webkit-auto;"><span style="font-family: 'Trebuchet MS', sans-serif;">We can choose a Community AMI as well.&nbsp;</span><a href="http://alestic.com/" style="font-family: 'Trebuchet MS', sans-serif;">http://alestic.com/</a><span style="font-family: 'Trebuchet MS', sans-serif;">&nbsp;has Ubuntu AMIs.</span></div><span style="font-family: 'Trebuchet MS', sans-serif;">I will run Ubuntu 11.10 server EBS Boot 32-bit, so I chose<b> ami-6ba27502.</b></span><br /><span style="font-family: 'Trebuchet MS', sans-serif;">You can choose any that you want. </span><br /><div style="text-align: left;"><span style="font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;">Go to Community AMIs and choose the AMI that suits you.</span><br /><span style="font-family: 'Trebuchet MS', sans-serif; text-align: -webkit-auto;"><br /></span></div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-5FraaoaYeFg/TyTwAeWfZhI/AAAAAAAAA2w/6YV4eWhQMEc/s1600/three.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-5FraaoaYeFg/TyTwAeWfZhI/AAAAAAAAA2w/6YV4eWhQMEc/s1600/three.png" /></a></div><div style="text-align: left;"><span style="font-family: 'Trebuchet MS', sans-serif;"><span style="line-height: 17px;"><br /></span></span></div></div><div style="text-align: -webkit-auto;"><span style="color: orange; font-size: large;"><b>Step 4.</b></span></div><div style="text-align: -webkit-auto;">Instance details</div><div style="text-align: -webkit-auto;">Micro (t1.mocre, 613MB)</div><div style="text-align: -webkit-auto;">Availability zone: No preference</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-Fdl9YTBwTGQ/TyTv8OlIZOI/AAAAAAAAA2Y/4vPqWhHyiDE/s1600/four.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-Fdl9YTBwTGQ/TyTv8OlIZOI/AAAAAAAAA2Y/4vPqWhHyiDE/s1600/four.png" /></a></div><br /></div><div style="text-align: -webkit-auto;">Made no changes in the next screen.</div><div style="text-align: -webkit-auto;">Choose any <a href="http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/Using_Tags.html" target="_blank">tags</a><br /><br /></div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-s4Pru_B4MqU/TyTv7dUFROI/AAAAAAAAA2Q/aRDCqKDgVT4/s1600/five.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-s4Pru_B4MqU/TyTv7dUFROI/AAAAAAAAA2Q/aRDCqKDgVT4/s1600/five.png" /></a></div><br /></div><div style="text-align: -webkit-auto;"><span style="color: orange; font-size: large;"><b>Step 5.</b></span></div><div style="text-align: -webkit-auto;">Create a keypair</div><div style="text-align: -webkit-auto;"><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-tQFRjElHNLQ/TyTv-2btv1I/AAAAAAAAA2o/l0YDXNtc4kM/s1600/six.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-tQFRjElHNLQ/TyTv-2btv1I/AAAAAAAAA2o/l0YDXNtc4kM/s1600/six.png" /></a></div><br /></div><div style="text-align: -webkit-auto;"><span style="color: orange; font-size: large;"><b>Step 6.</b></span></div><div style="text-align: -webkit-auto;">Configure the Firewall</div><div style="text-align: -webkit-auto;">Enable SSH and HTTP for sure. Rest all depend on your requirement.</div><div style="text-align: -webkit-auto;"><span s=""><br /></span></div><div style="text-align: -webkit-auto;">Review</div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-zAXqkXH1-0o/TyTv-GcjROI/AAAAAAAAA2g/qmrt2OIul4o/s1600/seven.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-zAXqkXH1-0o/TyTv-GcjROI/AAAAAAAAA2g/qmrt2OIul4o/s1600/seven.png" /></a></div></div><div style="text-align: -webkit-auto;"><div style="text-align: left;">This is my final configuration</div></div><div style="text-align: -webkit-auto;"><div style="text-align: left;"><br /></div></div><div style="text-align: -webkit-auto;">click <b>LAUNCH</b></div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;"><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-UAIqmNvl1XY/TyTv6vLVD4I/AAAAAAAAA2I/NBubUVmxwvA/s1600/eight.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-UAIqmNvl1XY/TyTv6vLVD4I/AAAAAAAAA2I/NBubUVmxwvA/s1600/eight.png" /></a></div><br /></div><div style="text-align: -webkit-auto;"><div style="text-align: center;"><b><span style="color: orange;">Congratulations, you have successfully launched the instance!</span></b></div><b><br /></b></div><div style="text-align: -webkit-auto;"><span style="color: orange; font-size: large;"><b>Step 7.</b></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">The EBS volume should automatically get linked to this instance, but if it doesn&#8217;t, click on <b>Volumes</b> on the left hand side of the console and then <b>Attach volume</b>.</span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;"><br /></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large; line-height: 22px;"><b>Step 8.</b></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">Attach <b>Elastic IP</b> address to this instance. Click <b>Elastic IPs</b>&nbsp;in the left menu, then <b>Associate</b>.</span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;"><br /></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large; line-height: 22px;"><b>Step 9.</b></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">The keypair that you had downloaded. Move it to ~/.ssh. Do the following</span><br /><blockquote class="tr_bq"><span style="background-color: white; color: #202020; line-height: 22px;"><span style="font-family: 'Courier New', Courier, monospace;">mv ~/Downloads/paraskey.pem ~/.ssh</span></span><span style="background-color: white; color: #202020; line-height: 22px;"><span style="font-family: 'Courier New', Courier, monospace;">cd ~/.ssh</span></span><span style="background-color: white; color: #202020; line-height: 22px;"><span style="font-family: 'Courier New', Courier, monospace;">chmod 400 paraskey.pem</span></span><span style="background-color: white; color: #202020; line-height: 22px;"><span style="font-family: 'Courier New', Courier, monospace;">ssh-add paraskey.pem</span></span></blockquote></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">The default user for this instance is <b>ubuntu</b>. If you are using one of the default AMIs, the user can also be <b>ec2-user</b>.</span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;"><br /></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: orange; font-family: 'Trebuchet MS', sans-serif; font-size: large; line-height: 22px;"><b>Step 10.</b></span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; color: #202020; font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">Now, to ssh into the instance from your computer,</span></div><div style="text-align: -webkit-auto;"><span style="background-color: white; font-family: 'Trebuchet MS', sans-serif;"></span></div><blockquote class="tr_bq"><span style="color: #202020;"><span style="font-family: 'Courier New', Courier, monospace; line-height: 22px;">ssh -vv -i ~/.ssh/paraskey.pem ubuntu@xxx.xxx.xxx.xxx</span></span></blockquote><span style="color: #202020;"><span style="font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">(here </span><span style="font-family: 'Courier New', Courier, monospace; line-height: 22px;">xxx.xxx.xxx.xxx</span><span style="font-family: 'Trebuchet MS', sans-serif; line-height: 22px;"> is the elastic IP associated with your instance)</span></span><br /><span style="color: #202020;"><span style="font-family: 'Trebuchet MS', sans-serif; line-height: 22px;">If you see this after above,</span></span><br /><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;"></span><br /><blockquote class="tr_bq"><span style="color: #202020;"><span style="font-family: 'Courier New', Courier, monospace; line-height: 22px;">ubuntu@ip-yyy-yyy-yyy-yyy:~$&nbsp;</span></span></blockquote><div style="line-height: 22px;"><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;">This means you have successfully logged into your EC2 instance!&nbsp;</span></div><div style="line-height: 22px;"><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;"><br /></span></div><div style="line-height: 22px;"><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;">Now you can install/run whatever software you want on this instance.</span></div><div style="line-height: 22px;"><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;">Be sure to take backups and snapshots of the volume before terminating the instance otherwise you will lose all your data!</span><br /><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;"><br /></span><br /><span style="color: #202020; font-family: 'Trebuchet MS', sans-serif;">Hope it helps. Enjoy!</span></div></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2012/01/12/fork-me-on-github/">Fork Me on Github</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-12T15:18:00+05:30" pubdate data-updated="true">Jan 12<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on">Just trying ;)</div><a href="https://github.com/parasnarang"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2012/01/10/lots-of-blog-posts-coming-up/">Lots of Blog Posts Coming Up!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-10T14:57:00+05:30" pubdate data-updated="true">Jan 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Now I am in the sixth semester of BTech Computer Science Engineering at VIT University.<br /><div>This semester I have taken a course named &#8220;Internet and Web Programming&#8221;. Since I have some decent experience in Web programming already, I am looking forward to this course.</div><div><br /></div><div>It is under FEP. FEP is Faculty Empowerment Program. Under this scheme, the faculty is free to design his own Examination and Grading structure. This means less exams in which I have to mug up and vomit! :)<br /><br /></div><div>So, For Internet and Web Programming course, I have to do a mini project, make a video tutorial and maintain a blog among other things. Since I already have a blog, I&#8217;l continue with this one. I am supposed to update 5 blog posts per month.&nbsp;</div><div><br /></div><div>Hopefully this will help me overcome my laziness and make me a regular blogger!</div></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/11/20/farewell-to-lug-seniors/">Farewell to LUG Seniors</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-20T09:15:00+05:30" pubdate data-updated="true">Nov 20<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;">Farewell treat to seniors of Linux Users Group, VIT University.</div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-Yk7rYKth8b8/Tsh31L9HxEI/AAAAAAAAAzg/_5A_CA3-D4I/s1600/cake.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Cake!" border="0" height="480" src="http://2.bp.blogspot.com/-Yk7rYKth8b8/Tsh31L9HxEI/AAAAAAAAAzg/_5A_CA3-D4I/s640/cake.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-X85dH-g7THI/Tsh32mdtSyI/AAAAAAAAAzo/JyOtO9or5c0/s1600/group.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Group" border="0" height="480" src="http://1.bp.blogspot.com/-X85dH-g7THI/Tsh32mdtSyI/AAAAAAAAAzo/JyOtO9or5c0/s640/group.jpg" width="640" /></a></div>More pics <a href="https://www.facebook.com/media/set/?set=oa.10150403979218077&amp;type=1" target="_blank">here</a>.</div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/10/31/ubuntu-1110-wifi/">Ubuntu 11.10 WiFi</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-31T00:02:00+05:30" pubdate data-updated="true">Oct 31<span>st</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Recently I upgraded from Linux Mint (Julia) to Ubuntu 11.10. I did so by creating a live USB of the Ubuntu 11.10 iso. Took backup of my stuff from the Mint partition, formatted it and installed Ubuntu over it.<br />It is a welcome change. Though the Unity interface requires some getting used to.<br />One of the first things I tried after installing is connecting to the internet. Initially the WiFi in Ubuntu 11.10 was not working. Here is how I got the WiFi working.<br /><br />Generally when one installs Ubuntu, the WiFi drivers can be found in the &#8216;Additional Drivers&#8217; and activated from there. But in my case, it was not able to find any driver. When I clicked on the network icon on the top panel, it showed &#8220;Wireless is disabled&#8221;.<br />I tried googling this, got some tips but none of them helped.<br /><br />So I downloaded bcmwl-kernel-source package from <a href="http://packages.ubuntu.com/oneiric/bcmwl-kernel-source">here</a>&nbsp;on a friend&#8217;s laptop. Tried to install it on my laptop.<br /><blockquote class="tr_bq">dpkg -i&nbsp;bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu4_amd64.deb</blockquote>This showed that a few dependents were missing. So downloaded <a href="http://packages.ubuntu.com/oneiric/dkms">dkms</a>&nbsp;and <a href="http://packages.ubuntu.com/oneiric/patch">patch</a>&nbsp;ie the missing packages.<br /><blockquote class="tr_bq">dpkg -i&nbsp;patch_2.6.1-2_amd64.deb</blockquote><blockquote class="tr_bq">dpkg -i&nbsp;dkms_2.2.0.2-1ubuntu4_all.deb</blockquote><blockquote class="tr_bq">dpkg -i&nbsp;bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu4_amd64.deb&nbsp;</blockquote>All the packages were installed successfully. Now, the Broadcom STA driver was visible in &#8216;Additional Drivers&#8217;. WiFi was working after enabling the driver (You might have to restart) .<br /><br />If you have the &#8220;Wireless is disabled by hardware switch&#8221; message when you click the network icon, make sure that if you have a switch on the side of your laptop, it is turned on.&nbsp;Also, press the wireless key on the keyboard which is mostly F2 or &#8216;Fn + F2&#8217; to turn On wireless. More details <a href="http://askubuntu.com/questions/44863/how-do-i-fix-wireless-network-disabled-by-hardware-switch">here</a>.<br /><blockquote class="tr_bq"></blockquote></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/09/27/mindmap-engineering/">Mindmap of an Engineering Student</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-27T16:48:00+05:30" pubdate data-updated="true">Sep 27<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-XFTcWyNAce8/ToGuOR3pRNI/AAAAAAAAAzI/x1sgrur9AYw/s1600/2011-09-27+14.10.31.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://3.bp.blogspot.com/-XFTcWyNAce8/ToGuOR3pRNI/AAAAAAAAAzI/x1sgrur9AYw/s640/2011-09-27+14.10.31.jpg" width="640" /></a></div><br /><div style="text-align: center;">This is actually my &#8216;Psychology and Sociology&#8217; Assignment :p</div></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/09/04/updates/">Some Updates</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-04T12:56:00+05:30" pubdate data-updated="true">Sep 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: left;"><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>1. Yahoo Open hack day</b></span></div><div class="separator" style="clear: both; text-align: left;"><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b><br /></b></span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-pqZl-Qih8Eo/TmMid49Ad5I/AAAAAAAAAzA/W4E2o5JOkpE/s1600/2011-07-31+13.22.16.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/-pqZl-Qih8Eo/TmMid49Ad5I/AAAAAAAAAzA/W4E2o5JOkpE/s640/2011-07-31+13.22.16.jpg" width="640" /></a></div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">My Team (L-R): <a href="http://www.rohitmishra.me/">Rohit Mishra</a>, <a href="http://www.samridhishree.com/">Samridhi Shree</a> &amp; <a href="http://colorlessgem.blogspot.com/">Paras Narang</a> (me)<br /><br />Our Hack: <a href="http://developer.yahoo.com/hacku/hackuhandler.php?appid=hacku&amp;op=showhack&amp;hackid=3876">Instant Movie</a></span><br /><br /><div id="__ss_9122818" style="width: 425px;"><b style="display: block; margin: 12px 0 4px;"><a href="http://www.slideshare.net/qwer188/48-instant-movie-wiredin" target="_blank" title="48 instant movie - wiredin">48 instant movie - wiredin</a></b> <iframe frameborder="0" height="355" marginheight="0" marginwidth="0" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/9122818" width="425"></iframe> <br /><div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/qwer188" target="_blank">Paras Narang </a> </div></div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Good Food + Great Environment + Bean Bags + Coding = Awesome Event !<br />Plus got to <a href="http://www.facebook.com/photo.php?fbid=10150235128327563&amp;set=a.10150235127697563.314062.571762562&amp;type=1">meet</a> <a href="http://www.crockford.com/">Douglas Crockford</a> !<br /><a href="http://www.facebook.com/media/set/?set=a.10150235127697563.314062.571762562&amp;l=73daf0e354&amp;type=1">More photos</a></span><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"> from the event.</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>2. My Samsung Galaxy S (i9000)</b></span></div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br />What I like:</span><br /><ul style="text-align: left;"><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Awesome Display</span></li><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Awesome Processor</span></li><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Doesn&#8217;t hang even while heavy multitasking</span></li><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Gingerbread 2.3.3 and its awesome apps</span></li></ul><div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">What I don&#8217;t like:</span></div><div><ul style="text-align: left;"><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Battery life. Hardly lasts a day</span></li><li><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">No Camera Flash</span></li></ul><div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Some of my&nbsp;favorite apps:<br />Pulse, Aldiko eBook, Maxthon Browser, Evernote, TubeX, SoundHound, Google Goggles, Talking Tom, PicSay,&nbsp;&nbsp;SwiFTP.<br />Games: Fruit Slice, PES 2011, NinJump, NFS MostWanted, Paper Toss.<br />Social: WhatsApp, Twitter, Foursquare, Google Latitude.</span></div></div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>3. PHP</b></span><br /><div style="text-align: left;"><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Made <a href="http://www.coursecode.in/">www.CourseCode.in</a> using the framework CakePHP. CourseCode helps students of my university collaborate with their friends while choosing courses for the next semester during FFCS.</span></div><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><a href="http://www.facebook.com/CourseCode">CourseCode.in</a> got <b>46k+ pageviews</b> in the first week !</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><a href="https://www.facebook.com/vituniversity/posts/176329989094928" target="_blank">Here</a> is the update from my university about my website.</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br />Also, updated my&nbsp;<a href="https://www.facebook.com/vituniversity/posts/139882822743377" target="_blank">facebook</a> <a href="http://www.facebook.com/vitattendance/" target="_blank">app</a></span><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"> for the current semester.</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Previously, I had posted about it <a href="http://colorlessgem.blogspot.com/2011/01/my-first-facebook-app.html" target="_blank">here</a>.</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>4. MIT Indian Mobile Initiative</b></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Three students from&nbsp;</span><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><span class="Apple-style-span" style="line-height: 15px;"><i style="font-style: normal;">Massachusetts Institute of Technology conducted a 2-day workshop on Android Development in my university, which I attended along with my friends. It covered only the basics but was overall a nice experience.&nbsp;</i></span></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b><br /></b></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>5. jQuery</b></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">My current flame. I never thought that a&nbsp;JavaScript&nbsp;library could be this addictive!</span><br /><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br /></span></b><br /><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">6.&nbsp;</span></b><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Ghost In The Wires</span></b><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><a href="https://twitter.com/#%21/parasnarang/status/109166843285082112">Finished</a> reading Kevin Mitnick&#8217;s latest <a href="http://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037702">book</a></span><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">. Finally got to know the actual facts about his life story after years of hearing rumors. He has lived one exciting life till now, with its own ups and downs.</span><br /><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><br /></span></b><br /><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">7. Google buys Motorola and&nbsp;</span></b><b><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Steve Jobs resigns as CEO</span></b><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Google comes into hardware.. now this is going to be fun ! I know this is majorly because of patents.. but still!</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Even though out of all the Apple products, I have owned only an iPod Classic, I am an Apple fan. I admire Steve Jobs and have always looked forward to seeing him on stage.</span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b><br /></b></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;"><b>8. Friends</b></span><br /><span class="Apple-style-span" style="font-family: Arial, Helvetica, sans-serif;">Friendship is evergreen. It&#8217;s always fun to hang out as a group, which we seem to been doing a lot lately.. even during exams ;)</span></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/04/08/no-init-found-try-passing-initbootarg/">No Init Found. Try Passing Init=bootarg.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-08T21:54:00+05:30" pubdate data-updated="true">Apr 8<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">Another GNU/Linux error!</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">As you might have seen in the previous <a href="http://colorlessgem.blogspot.com/2011/03/uptime.html">post</a>, I did not turn off my laptop for more than 8 days. The next day, I <a href="http://en.wikipedia.org/wiki/Hibernation_(computing)">hibernated</a> my laptop and when I turned it on again, it didn&#8217;t boot into Mint. The following error was displayed<span class="Apple-style-span" style="line-height: 10px;"><br /></span> </span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="line-height: 21px;">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">No init fount. Try passing init = bootarg.<br /><br />BusyBox v1.13.3 (Ubuntu 1:1.13.3-1ubuntu7) built in shell (ash)<br />Enter &#8216;help&#8217; for a list of build in commands<br /><br />(initramfs):</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif; line-height: 21px;">&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif; font-size: 15px; line-height: 21px;">The Grub was working fine. I was able to successively boot into Windows. But when I tried to boot into Linux Mint 10, it showed this annoying message.</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">So I called up a few friends to ask for help.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">The solution was actually pretty simple. Just follow the following steps.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">1. Boot using a Live CD which has the same kernel.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">I use Linux Mint 10 (Julia), but I did not have its Live CD and I was too lazy to make one. So I used the Ubuntu 10.10 Live CD instead of it, as Ubuntu 10.10 and Linux Mint 10 have the same kernel.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">2. From terminal, find out the partition of hard disk that has Linux. For this, the command is:</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">sudo fdisk -l</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">In my case, the partition is /dev/sda7.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">3. Now run disk check on that partition using fsck.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">sudo fsck /dev/sda7</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">Thats it! Once the above command has successfully executed, reboot the computer and you will be able to boot into your OS without any annoying messages!</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">The only negative is that you will lose your session i.e the one that you had hibernated.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">Hope it helps.</span></span></div></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>reynante</div>
+<div class='content'>
+Thank you so much! It worked like a charm.  Admittedly, I have a had few faults with my video and such, causing this problem.  I&#39;m glad I came into this post.  Thanks, Paras. ^_^<br /><br />-Reyn</div>
+</div>
+<div class='comment'>
+<div class='author'>Paras</div>
+<div class='content'>
+Hi Giovanni, I m glad I could be of some help :)<br />Thanks for the comment!</div>
+</div>
+<div class='comment'>
+<div class='author'>Giovanni Paolo</div>
+<div class='content'>
+OMG! Thanks!<br />YOU SAVED MY LIFE!<br />I BOW TO YOU!<br />I would kiss your feet but i cant.<br /><br />                                            Thank You &amp; HI<br />                                              From the:<br />                                        Dominican Republic<br />P.S. That Far!</div>
+</div>
+</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2011/03/24/uptime/">Uptime</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-24T23:32:00+05:30" pubdate data-updated="true">Mar 24<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><br /><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;">**update** 20+ Days - 2013 - Mac OSX&nbsp;</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-SZjlwrM6ms0/USrYF2DsEbI/AAAAAAAABKI/v01rrp7UUI0/s1600/Screen+Shot+2013-02-23+at+1.07.21+AM.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-SZjlwrM6ms0/USrYF2DsEbI/AAAAAAAABKI/v01rrp7UUI0/s1600/Screen+Shot+2013-02-23+at+1.07.21+AM.png" /></a></div><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;"><br /></span><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;">*update* 8+ Days - 2012 - Linux Mint</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-GDLRFLziMJU/TY676IjHqxI/AAAAAAAAAIg/IyKB5_3bsZw/s1600/Screenshot-1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="443" src="http://2.bp.blogspot.com/-GDLRFLziMJU/TY676IjHqxI/AAAAAAAAAIg/IyKB5_3bsZw/s640/Screenshot-1.png" width="640" /></a></div><div><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;"><br /></span></div><br /><span style="font-family: Verdana, sans-serif;">6+ Days - 2011 - Linux Mint</span><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://lh5.googleusercontent.com/-UqTaBshV-TM/TYuGWUSAR0I/AAAAAAAAAIc/FfuHwAyhqLM/s1600/Screenshot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;"><img border="0" height="443" src="https://lh5.googleusercontent.com/-UqTaBshV-TM/TYuGWUSAR0I/AAAAAAAAAIc/FfuHwAyhqLM/s640/Screenshot.png" width="640" /></span></a></div><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;">Busy Days, eh!</span><br /><br /><br /><span class="Apple-style-span" style="font-family: &quot;Verdana&quot;,sans-serif;">btw, one of my friends using windows 7 didn&#8217;t shut down his lappy for 2 days.. and guess what.. it crashed! :D</span></div></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/4/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/2/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2013/01/15/polite-birthday-wishes/">Polite Birthday Wishes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2013/01/15/ntfs-driver-for-mac-os/">NTFS Driver for Mac OS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/11/30/hci-online-course-on-coursera/">HCI Online Course on Coursera</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/10/17/rails-rumble-2012/">Rails Rumble 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/blog/2012/08/24/whatsapp-messenger-on-mac-os-x/">Whatsapp Messenger on Mac OS X [Updated]</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Paras Narang -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

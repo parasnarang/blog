@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: error | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/error/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A day without Google Search]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/04/21/day-without-google-search/"/>
+    <updated>2012-04-21T13:15:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/04/21/day-without-google-search</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-d6JJEW7dqP0/T5JkdfPqusI/AAAAAAAABAI/3XUnep_YeJk/s1600/Screenshot+at+2012-04-21+12:50:38.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="359" src="http://2.bp.blogspot.com/-d6JJEW7dqP0/T5JkdfPqusI/AAAAAAAABAI/3XUnep_YeJk/s640/Screenshot+at+2012-04-21+12:50:38.png" width="640" /></a></div><div style="text-align: center;">I haven't been able to Google anything since this morning. It is like Google is forcing me to use Bing!</div></div></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Internet not working on Amazon EC2 Ubuntu instance]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/02/03/internet-not-working-on-amazon-ec2/"/>
+    <updated>2012-02-03T13:56:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/02/03/internet-not-working-on-amazon-ec2</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">After <a href="http://colorlessgem.blogspot.com/2012/01/ubuntu-micro-instance-on-amazon-ec2.html" target="_blank">launching</a> the EC2 instance, which used Ubuntu 11.10 32bit EBS AMI, I wasn't able to connect to the internet.<br /><blockquote class="tr_bq"><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">ubuntu@ip-xx-xx-xx-xx:~$ ping google.com</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">PING google.com (74.125.113.103) 56(84) bytes of data.</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">^C</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">google.com ping statistics ---</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">311 packets transmitted, 0 received, 100% packet loss, time 310000ms</span></blockquote>The DNS was fine.<br />I checked the security group for that instance. HTTP inbound connections were allowed. So no problem there.<br />The /etc/resolv.conf file was also in order.<br /><blockquote class="tr_bq"><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">ubuntu@ip-xx-xx-xx-xx:~$ cat /etc/resolv.conf</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">domain ec2.internal</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">search ec2.internal</span><br /><span style="background-color: #f7f7f7; font-family: verdana, arial, sans-serif; font-size: 12px; line-height: 18px; text-align: -webkit-auto;">nameserver 172.16.0.23</span></blockquote>Finally, I asked the AWS guys in the forum for help. [<a href="https://forums.aws.amazon.com/thread.jspa?messageID=316370" target="_blank">Thread</a>]<br />A simple suggestion solved my problem, though I have no clue why!<br /><br />All I had to do was stop the instance and then start it again. Just be careful that you have data backup before stopping the instance. As all your data on that instance will be lost unless you take a snapshot of the volume or have some other form of backup.<br /><br />In short, Stop/Start did the trick.<br /><blockquote class="tr_bq"></blockquote></div></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[No init found. Try passing init=bootarg.]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2011/04/08/no-init-found-try-passing-initbootarg/"/>
+    <updated>2011-04-08T21:54:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2011/04/08/no-init-found-try-passing-initbootarg</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">Another GNU/Linux error!</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">As you might have seen in the previous <a href="http://colorlessgem.blogspot.com/2011/03/uptime.html">post</a>, I did not turn off my laptop for more than 8 days. The next day, I <a href="http://en.wikipedia.org/wiki/Hibernation_(computing)">hibernated</a> my laptop and when I turned it on again, it didn't boot into Mint. The following error was displayed<span class="Apple-style-span" style="line-height: 10px;"><br /></span> </span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="line-height: 21px;">-----------------------------------------------------------------------------------</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;">No init fount. Try passing init = bootarg.<br /><br />BusyBox v1.13.3 (Ubuntu 1:1.13.3-1ubuntu7) built in shell (ash)<br />Enter 'help' for a list of build in commands<br /><br />(initramfs):</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif; line-height: 21px;">-----------------------------------------------------------------------------------</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif; font-size: 15px; line-height: 21px;">The Grub was working fine. I was able to successively boot into Windows. But when I tried to boot into Linux Mint 10, it showed this annoying message.</span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">So I called up a few friends to ask for help.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">The solution was actually pretty simple. Just follow the following steps.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><br /></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">1. Boot using a Live CD which has the same kernel.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">I use Linux Mint 10 (Julia), but I did not have its Live CD and I was too lazy to make one. So I used the Ubuntu 10.10 Live CD instead of it, as Ubuntu 10.10 and Linux Mint 10 have the same kernel.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">2. From terminal, find out the partition of hard disk that has Linux. For this, the command is:</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">sudo fdisk -l</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">In my case, the partition is /dev/sda7.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">3. Now run disk check on that partition using fsck.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">sudo fsck /dev/sda7</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">Thats it! Once the above command has successfully executed, reboot the computer and you will be able to boot into your OS without any annoying messages!</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">The only negative is that you will lose your session i.e the one that you had hibernated.</span></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"></span><br /><span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="font-size: 15px; line-height: 21px;">Hope it helps.</span></span></div></div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>reynante</div>
+<div class='content'>
+Thank you so much! It worked like a charm.  Admittedly, I have a had few faults with my video and such, causing this problem.  I&#39;m glad I came into this post.  Thanks, Paras. ^_^<br /><br />-Reyn</div>
+</div>
+<div class='comment'>
+<div class='author'>Paras</div>
+<div class='content'>
+Hi Giovanni, I m glad I could be of some help :)<br />Thanks for the comment!</div>
+</div>
+<div class='comment'>
+<div class='author'>Giovanni Paolo</div>
+<div class='content'>
+OMG! Thanks!<br />YOU SAVED MY LIFE!<br />I BOW TO YOU!<br />I would kiss your feet but i cant.<br /><br />                                            Thank You &amp; HI<br />                                              From the:<br />                                        Dominican Republic<br />P.S. That Far!</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

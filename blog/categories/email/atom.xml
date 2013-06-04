@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: email | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/email/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Handling mailto: links using GMail]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/02/16/handling-mailto-links-using-gmail/"/>
+    <updated>2012-02-16T19:49:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/02/16/handling-mailto-links-using-gmail</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">The internet is full of <span style="font-family: 'Courier New', Courier, monospace;">mailto:</span> links. Clicking on them opens the default Desktop Email client like Outlook or Mozilla Thunderbird. This can be irritation if you don't use a Desktop client and your account is not set up in it.<br /><br />Using&nbsp;<span style="background-color: white; font-family: monospace, monospace; line-height: 21px; text-align: -webkit-auto;">navigator.registerProtocolHandler()</span><span style="background-color: white; line-height: 21px; text-align: -webkit-auto;"><span style="font-family: inherit;">, We can make gmail handle these </span><span style="font-family: 'Courier New', Courier, monospace;">mailto:</span><span style="font-family: inherit;"> links.</span></span><br /><span style="background-color: white; line-height: 21px; text-align: -webkit-auto;"><span style="font-family: inherit;"><br /></span></span><br /><span style="background-color: white; line-height: 21px; text-align: -webkit-auto;"><span style="font-family: inherit;">Just follow the following steps:</span></span><br /><br /><ol style="text-align: left;"><li><span style="line-height: 21px;">Open GMail in a new tab.</span></li><li><span style="line-height: 21px;">From that tab, open the javascript console (<span style="font-family: 'Courier New', Courier, monospace;">ctrl + shift + j</span>)</span></li><li><span style="line-height: 21px;">Type the following:&nbsp;</span></li></ol><blockquote class="tr_bq"><span style="line-height: 21px;"><span style="font-family: 'Courier New', Courier, monospace;">navigator.registerProtocolHandler("mailto", "https://mail.google.com/mail/?extsrc=mailto&amp;url=%s", "Gmail");</span></span></blockquote>Then accept the confirmation from the browser and you are all set!<br /><span style="background-color: white; font-family: inherit; line-height: 21px; text-align: -webkit-auto;"><br /></span><br /><span style="background-color: white; font-family: inherit; line-height: 21px; text-align: -webkit-auto;">To change these settings,</span><br /><span style="background-color: white; line-height: 21px; text-align: -webkit-auto;"><span style="font-family: inherit;">If you use Mozilla Firefox, go to</span><span style="font-family: 'Courier New', Courier, monospace;"> Preferences -&gt; Applications -&gt; mailto.</span></span><br /><span style="background-color: white; line-height: 21px; text-align: -webkit-auto;"><span style="font-family: inherit;">If you use chrome, browse to&nbsp;</span></span><span style="background-color: white; font-family: 'Open Sans', sans-serif; line-height: 21px; text-align: -webkit-auto;">&nbsp;</span><code style="background-color: white; font-family: monospace, monospace; line-height: 21px; text-align: -webkit-auto;">chrome://settings/handlers.</code><br /><code style="background-color: white; font-family: monospace, monospace; line-height: 21px; text-align: -webkit-auto;"><br /></code><br /><div style="text-align: -webkit-auto;"><span style="line-height: 21px;"><span style="font-family: Georgia, 'Times New Roman', serif;">For more detailed information, see <a href="http://updates.html5rocks.com/2012/02/Getting-Gmail-to-handle-all-mailto-links-with-registerProtocolHandler" target="_blank">here</a>.</span></span></div></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>

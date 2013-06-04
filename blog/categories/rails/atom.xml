@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Rumble 2012]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/10/17/rails-rumble-2012/"/>
+    <updated>2012-10-17T02:31:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/10/17/rails-rumble-2012</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">This year, <a href="http://www.rohitmishra.me/" target="_blank">Rohit Mishra</a> and I participated in <a href="http://railsrumble.com/" target="_blank">Rails Rumble</a> and built <a href="http://appdreamers.r12.railsrumble.com/%C2%A0" target="_blank">SocialKart</a> from scratch in less than 48 hours.<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-1YtksbR6StE/ULkd2oj9jWI/AAAAAAAABIs/IjYxJdyj4rs/s1600/Screen+Shot+2012-12-01+at+2.26.02+AM.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="http://2.bp.blogspot.com/-1YtksbR6StE/ULkd2oj9jWI/AAAAAAAABIs/IjYxJdyj4rs/s640/Screen+Shot+2012-12-01+at+2.26.02+AM.png" width="640" /></a></div>Some Details are :<br /><br />Team name : AppDreamers<br /><br />Description: Socialkart lets users do quick comparisons of products from Flipkart, the leading Indian ecommerce site, with their Facebook friends.<br /><br />Entry Link :&nbsp;<a href="http://railsrumble.com/entries/386-socialkart">http://railsrumble.com/entries/386-socialkart</a> (Vote for us here)<br /><br />Live Demo : <a href="http://appdreamers.r12.railsrumble.com/" target="_blank">http://appdreamers.r12.railsrumble.com/</a></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>

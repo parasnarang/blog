@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: android | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Polite Birthday Wishes]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2013/01/15/polite-birthday-wishes/"/>
+    <updated>2013-01-15T23:18:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2013/01/15/polite-birthday-wishes</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Recently, I was watching a movie with my friends on my birthday. During the movie, I was getting birthday messages frequently and I was not able to reply to them instantly as the phone was on silent. I thought that there should have been a way to send automatic replies instantly so as to not be rude and then I can call up later when I get the time. That is when I came up with this idea.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;"><span style="font-size: large;"><a href="https://github.com/parasnarang/Polite-Birthday-Wishes" target="_blank">Polite Birthday Wishes</a> </span>is a script for Android phones that will automatically send a Thank you message if an incoming SMS contains specific case-insensitive keywords like 'birthday' or 'bday'. It can be installed on your phone as a Rule on the <a href="https://play.google.com/store/apps/details?id=com.microsoft.onx.app" target="_blank">on{X} Android App</a>.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif; font-size: large;"><u>on{X}</u></span><br /><ul style="text-align: left;"><li><span style="font-family: Verdana, sans-serif;">Lets you control and extend the capabilities of your Android phone using a JavaScript API to remotely program it.</span></li><li><span style="font-family: Verdana, sans-serif;">Developed by Microsoft Corporation.</span></li><li><span style="font-family: Verdana, sans-serif;"><a href="http://www.onx.ms/" target="_blank">Official Website</a></span></li><li><span style="font-family: Verdana, sans-serif;"><a href="http://www.blogger.com/" target="_blank"><span id="goog_512005345"></span>Download App<span id="goog_512005346"></span></a> on Google Play.</span></li></ul><div><span style="font-family: Verdana, sans-serif;"><br /></span></div><div><span style="font-family: Verdana, sans-serif; font-size: large;"><u>Description</u></span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">This rule monitors the incoming SMS and checks for 'birthday' or 'bday' (case in-sensitive) in the body. On receiving desired SMS the script sends a Thank you message as a reply.</span></div><div><span style="font-family: Verdana, sans-serif;"><br /></span></div><div><span style="font-family: Verdana, sans-serif; font-size: large;"><u>How to Install</u></span></div><div><div><ol style="text-align: left;"><li><span style="font-family: Verdana, sans-serif;">Go to <a href="http://www.onx.ms/" target="_blank">on{X} Website</a> and Login using Facebook.</span></li><li><span style="font-family: Verdana, sans-serif;"><a href="https://play.google.com/store/apps/details?id=com.microsoft.onx.app" target="_blank">Download</a> on{X} app to your Android Phone.</span></li><li><span style="font-family: Verdana, sans-serif;">Click on <a href="https://www.onx.ms/#!createScriptPage" target="_blank">Create a Rule</a>.</span></li><li><span style="font-family: Verdana, sans-serif;">Paste the code from <a href="https://github.com/parasnarang/Polite-Birthday-Wishes/blob/master/PoliteBirthdayWishes.js" target="_blank">PoliteBirthdayWishes.js</a><span id="goog_316380935"></span><span id="goog_316380936"></span><a href="http://www.blogger.com/"></a> in the Code section.</span></li><li><span style="font-family: Verdana, sans-serif;">Give a title and then click 'Save and send to phone'.</span></li></ol><div><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Have fun ! For any feedback, contact me at <a href="mailto:narangparas@gmail.com">narangparas@gmail.com</a>.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;"><br /></span></div></div></div></div></div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>robin hood</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+<div class='comment'>
+<div class='author'>sajith</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

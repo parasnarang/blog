@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: google | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/google/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A day without Google Search]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/04/21/day-without-google-search/"/>
+    <updated>2012-04-21T13:15:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/04/21/day-without-google-search</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-d6JJEW7dqP0/T5JkdfPqusI/AAAAAAAABAI/3XUnep_YeJk/s1600/Screenshot+at+2012-04-21+12:50:38.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="359" src="http://2.bp.blogspot.com/-d6JJEW7dqP0/T5JkdfPqusI/AAAAAAAABAI/3XUnep_YeJk/s640/Screenshot+at+2012-04-21+12:50:38.png" width="640" /></a></div><div style="text-align: center;">I haven't been able to Google anything since this morning. It is like Google is forcing me to use Bing!</div></div></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Evolution of Google]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/02/19/evolution-of-google/"/>
+    <updated>2012-02-19T12:21:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/02/19/evolution-of-google</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on"><div style="text-align: center;">A neat summary of the Evolution of Google</div></div><iframe src="http://onlinephd.org/evolution-of-google-embed" style="border: none; height: 590px; width: 700px;"></iframe><br /><div style="text-align: center;">Created by Online PhD (Shared by Peter Kim)</div></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>

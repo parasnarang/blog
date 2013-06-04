@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code | My Octopress Blog]]></title>
+  <link href="http://parasnarang.github.io/blog/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://parasnarang.github.io/blog/"/>
+  <updated>2013-06-04T06:10:04+05:30</updated>
+  <id>http://parasnarang.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Paras Narang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Polite Birthday Wishes]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2013/01/15/polite-birthday-wishes/"/>
+    <updated>2013-01-15T23:18:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2013/01/15/polite-birthday-wishes</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Recently, I was watching a movie with my friends on my birthday. During the movie, I was getting birthday messages frequently and I was not able to reply to them instantly as the phone was on silent. I thought that there should have been a way to send automatic replies instantly so as to not be rude and then I can call up later when I get the time. That is when I came up with this idea.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;"><span style="font-size: large;"><a href="https://github.com/parasnarang/Polite-Birthday-Wishes" target="_blank">Polite Birthday Wishes</a> </span>is a script for Android phones that will automatically send a Thank you message if an incoming SMS contains specific case-insensitive keywords like 'birthday' or 'bday'. It can be installed on your phone as a Rule on the <a href="https://play.google.com/store/apps/details?id=com.microsoft.onx.app" target="_blank">on{X} Android App</a>.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif; font-size: large;"><u>on{X}</u></span><br /><ul style="text-align: left;"><li><span style="font-family: Verdana, sans-serif;">Lets you control and extend the capabilities of your Android phone using a JavaScript API to remotely program it.</span></li><li><span style="font-family: Verdana, sans-serif;">Developed by Microsoft Corporation.</span></li><li><span style="font-family: Verdana, sans-serif;"><a href="http://www.onx.ms/" target="_blank">Official Website</a></span></li><li><span style="font-family: Verdana, sans-serif;"><a href="http://www.blogger.com/" target="_blank"><span id="goog_512005345"></span>Download App<span id="goog_512005346"></span></a> on Google Play.</span></li></ul><div><span style="font-family: Verdana, sans-serif;"><br /></span></div><div><span style="font-family: Verdana, sans-serif; font-size: large;"><u>Description</u></span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">This rule monitors the incoming SMS and checks for 'birthday' or 'bday' (case in-sensitive) in the body. On receiving desired SMS the script sends a Thank you message as a reply.</span></div><div><span style="font-family: Verdana, sans-serif;"><br /></span></div><div><span style="font-family: Verdana, sans-serif; font-size: large;"><u>How to Install</u></span></div><div><div><ol style="text-align: left;"><li><span style="font-family: Verdana, sans-serif;">Go to <a href="http://www.onx.ms/" target="_blank">on{X} Website</a> and Login using Facebook.</span></li><li><span style="font-family: Verdana, sans-serif;"><a href="https://play.google.com/store/apps/details?id=com.microsoft.onx.app" target="_blank">Download</a> on{X} app to your Android Phone.</span></li><li><span style="font-family: Verdana, sans-serif;">Click on <a href="https://www.onx.ms/#!createScriptPage" target="_blank">Create a Rule</a>.</span></li><li><span style="font-family: Verdana, sans-serif;">Paste the code from <a href="https://github.com/parasnarang/Polite-Birthday-Wishes/blob/master/PoliteBirthdayWishes.js" target="_blank">PoliteBirthdayWishes.js</a><span id="goog_316380935"></span><span id="goog_316380936"></span><a href="http://www.blogger.com/"></a> in the Code section.</span></li><li><span style="font-family: Verdana, sans-serif;">Give a title and then click 'Save and send to phone'.</span></li></ol><div><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;">Have fun ! For any feedback, contact me at <a href="mailto:narangparas@gmail.com">narangparas@gmail.com</a>.</span><br /><span style="font-family: Verdana, sans-serif;"><br /></span><span style="font-family: Verdana, sans-serif;"><br /></span></div></div></div></div></div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>robin hood</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+<div class='comment'>
+<div class='author'>sajith</div>
+<div class='content'>
+This comment has been removed by a blog administrator.</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Winning the Hackathon at Exebit 2012, IIT Chennai]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/03/10/winning-hackathon-at-exebit-2012-iit/"/>
+    <updated>2012-03-10T08:32:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/03/10/winning-hackathon-at-exebit-2012-iit</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on">This year on 3rd and 4th March, The department of Computer Science Engineering of IIT Chennai organized a technical festival named <a href="http://www.cse.iitm.ac.in/exebit/site/" target="_blank">Exebit 2012</a>.<br />Students from IIT Chennai had come to my college and were making classroom announcements to promote their fest. They were planning to conduct many interesting workshops and events.<br /><br />I was interested in one particular event, the <a href="http://www.cse.iitm.ac.in/exebit/site/?q=node/25" target="_blank">Hackathon</a>. So I decided to participate along with 3 friends in a team of 4.<br /><br />The hackathon was a 2-day coding event. It started on Saturday morning. First, we were given an introduction to three open source projects - <a href="http://www.kde.org/" target="_blank">KDE</a>, <a href="http://www.mediawiki.org/" target="_blank">MediaWiki</a>&nbsp;and <a href="https://www.djangoproject.com/" target="_blank">Django</a>. After that we were given a list of bugs in each of these projects. The team that solves the maximum/toughest bugs wins.<br /><br />We were relatively new to all of the three projects. Solving KDE bugs would require knowledge of C++, MediaWiki of object oriented Php and Django of Python.<br />We were having some trouble in setting up the KDE environment and as 2 of us knew Php well, we decided to try our hand at solving MediaWiki bugs. It took us quite some time to understand how the MediaWiki framework works and what are Extensions, Hooks, Special Pages etc. Then we started coding.<br />We spent the whole night coding in lab. I didnot sleep for those 2 days! Early morning, we went for a <a href="https://twitter.com/#!/parasnarang/status/176114710633119744" target="_blank">walk in the campus</a>. We played basketball early in the morning. Then back to coding after breakfast. The other teams were working hard too. By evening, we were able to find solutions to 6 bugs. In the end we had to give presentations on our bug patches and after some time the winners were announced.<br /><br />We won the <a href="http://groups.google.com/group/exebit-hackathon/browse_thread/thread/1870a0ba7ce6846" target="_blank">first prize</a>! We were really happy. Not only because of the cash prize but also because it was our first experience at solving bugs in open source projects and we managed to win!<br /><br />Some facebook updates from my team: [<a href="https://www.facebook.com/parasnarang/posts/10150550117627563" target="_blank">one</a>] [<a href="https://www.facebook.com/freako2011/posts/3007331375826" target="_blank">two</a>] [<a href="https://www.facebook.com/madhumita.sk/posts/2464928242857" target="_blank">three</a>] [<a href="https://www.facebook.com/permalink.php?story_fbid=314991361891147&amp;id=100001408564659" target="_blank">four</a>]</div></div><blockquote class="twitter-tweet tw-align-center"><p>Winners of Hackathon at Exebit2012, IIT Chennai! My team: @<a href="https://twitter.com/bRainzest">bRainzest</a>, @<a href="https://twitter.com/madzie154">madzie154</a>, @<a href="https://twitter.com/cool_garima">cool_garima</a> \m/</p>&mdash; Paras Narang (@parasnarang) <a href="https://twitter.com/parasnarang/status/176586707586662400" data-datetime="2012-03-05T08:35:26+00:00">March 5, 2012</a></blockquote><script src="http://parasnarang.github.io/blog//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fork me on Github]]></title>
+    <link href="http://parasnarang.github.io/blog/blog/2012/01/12/fork-me-on-github/"/>
+    <updated>2012-01-12T15:18:00+05:30</updated>
+    <id>http://parasnarang.github.io/blog/blog/2012/01/12/fork-me-on-github</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="ltr" style="text-align: left;" trbidi="on">Just trying ;)</div><a href="https://github.com/parasnarang"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a></div></div>
+
+]]></content>
+  </entry>
+  
+</feed>
