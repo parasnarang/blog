@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Ubuntu 11.10 WiFi"
+date: 2011-10-31T00:02:00+05:30
+comments: false
+categories:
+ - install
+ - linux
+ - HOWTO
+---
+
+<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Recently I upgraded from Linux Mint (Julia) to Ubuntu 11.10. I did so by creating a live USB of the Ubuntu 11.10 iso. Took backup of my stuff from the Mint partition, formatted it and installed Ubuntu over it.<br />It is a welcome change. Though the Unity interface requires some getting used to.<br />One of the first things I tried after installing is connecting to the internet. Initially the WiFi in Ubuntu 11.10 was not working. Here is how I got the WiFi working.<br /><br />Generally when one installs Ubuntu, the WiFi drivers can be found in the 'Additional Drivers' and activated from there. But in my case, it was not able to find any driver. When I clicked on the network icon on the top panel, it showed "Wireless is disabled".<br />I tried googling this, got some tips but none of them helped.<br /><br />So I downloaded bcmwl-kernel-source package from <a href="http://packages.ubuntu.com/oneiric/bcmwl-kernel-source">here</a>&nbsp;on a friend's laptop. Tried to install it on my laptop.<br /><blockquote class="tr_bq">dpkg -i&nbsp;bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu4_amd64.deb</blockquote>This showed that a few dependents were missing. So downloaded <a href="http://packages.ubuntu.com/oneiric/dkms">dkms</a>&nbsp;and <a href="http://packages.ubuntu.com/oneiric/patch">patch</a>&nbsp;ie the missing packages.<br /><blockquote class="tr_bq">dpkg -i&nbsp;patch_2.6.1-2_amd64.deb</blockquote><blockquote class="tr_bq">dpkg -i&nbsp;dkms_2.2.0.2-1ubuntu4_all.deb</blockquote><blockquote class="tr_bq">dpkg -i&nbsp;bcmwl-kernel-source_5.100.82.38+bdcom-0ubuntu4_amd64.deb&nbsp;</blockquote>All the packages were installed successfully. Now, the Broadcom STA driver was visible in 'Additional Drivers'. WiFi was working after enabling the driver (You might have to restart) .<br /><br />If you have the "Wireless is disabled by hardware switch" message when you click the network icon, make sure that if you have a switch on the side of your laptop, it is turned on.&nbsp;Also, press the wireless key on the keyboard which is mostly F2 or 'Fn + F2' to turn On wireless. More details <a href="http://askubuntu.com/questions/44863/how-do-i-fix-wireless-network-disabled-by-hardware-switch">here</a>.<br /><blockquote class="tr_bq"></blockquote></div></div>
